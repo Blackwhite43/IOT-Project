@@ -3,7 +3,8 @@ const sampleController = require("../controllers/sampleController");
 
 const router = express.Router();
 
-router.route('/') // YOU CAN CUSTOMIZE YOUR ROUTE NAME, JUST CHANGE 'route-name' INTO ANYTHING YOU LIKE
+router.route('/')
     .get(sampleController.get_data)
-    .post(sampleController.receive_data) // GET, POST, UPDATE, DELETE, etc.
+    .post(sampleController.receive_data)
+    .delete(sampleController.delete_all_data)
 module.exports = router;

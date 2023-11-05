@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 const schemaName = new mongoose.Schema({
     distance: {
         type: Number
+    },
+    direction: {
+        type: Number
+    },
+    weight: {
+        type: Number
     }
 }, {timestamps: true})
 
